@@ -37,7 +37,8 @@ public class ProcessClient implements Processor {
                 .filter(client -> client.getBill().getBill5() > 0)
                 .filter(client -> client.getBill().getBill6() > 0)
                 .collect(Collectors.toList());
-        log.info("Cantidad de datos de clientes filtrado: {}",filterClient.size());
+        log.info("Cantidad de datos de clientes validos: {}",filterClient.size());
+        log.info("Cantidad de datos de clientes no validos : {}",clientList.size() - filterClient.size());
         List<Person> personList = filterClient.stream()
                 .map(client -> new Person(client.getId(),client.getSex(),client.getAge()))
                 .collect(Collectors.toList());
