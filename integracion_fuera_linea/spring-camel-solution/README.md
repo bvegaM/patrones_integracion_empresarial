@@ -1,4 +1,6 @@
-# Solución de la tarea 2
+# Solución de integración fuera de linea
+> **nombre:** Bryam David Vega Moreno <br>
+
 
 ## Tecnologías y librerias:
 
